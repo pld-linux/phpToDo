@@ -6,7 +6,6 @@ Release:	1
 License:	GPL v2
 Group:		Applications/Databases/Interfaces
 Source0:	ftp://ftp.ftlight.net/pub/phptodo/%{name}-%{version}.tar.gz
-Patch0:		%{name}-config.patch
 URL:		http://php-todo.sourceforge.net/
 Requires:	mysql
 Requires:	php-mysql >= 4.1.0
@@ -30,13 +29,12 @@ zrobiony aby byæ jak najprostszym.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_phptododir}/img
 
-install *.php *.inc *.css	$RPM_BUILD_ROOT%{_phptododir}
+install *.php *.css	$RPM_BUILD_ROOT%{_phptododir}
 install img/*.png	$RPM_BUILD_ROOT%{_phptododir}/img
 
 %clean
@@ -46,7 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog INSTALL README TODO sql/*
 %dir %{_phptododir}
-%attr(664,root,http) %config(noreplace) %{_phptododir}/config.inc
-%{_phptododir}/*.php
+%attr(664,root,http) %config(noreplace) %{_phptododir}/*.php
 %{_phptododir}/*.css
 %{_phptododir}/img/*.png

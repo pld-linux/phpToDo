@@ -11,7 +11,7 @@ URL:		http://php-todo.sourceforge.net/
 Requires:	mysql
 Requires:	php-mysql >= 4.1.0
 Requires:	webserver
-Buildarch:	noarch
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_phptododir	/home/services/httpd/html/phptodo

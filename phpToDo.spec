@@ -17,10 +17,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_phptododir	/home/httpd/html/phptodo
 
 %description
-phpToDo is a simple todo list written in PHP with a MySQL backend. It provides a very simple and efficient way of keeping track of things to do, and it sorts tasks by their priorities. The user interface is designed to make usage as easy and efficient as possible.
+phpToDo is a simple todo list written in PHP with a MySQL backend. It
+provides a very simple and efficient way of keeping track of things to
+do, and it sorts tasks by their priorities. The user interface is
+designed to make usage as easy and efficient as possible.
 
 %description -l pl
-phpToDo jest prost± list± rzeczy "ToDo" napisan± w PHP z backendem w MySQL. Posiada bardzo prosty i efektywny sposób na ¶ledzenie rzeczy do zrobienia oraz sortowania zadañ wed³ug priorytetów. Interfejs jest zrobiony aby byæ jak najprostszym.
+phpToDo jest prost± list± rzeczy "ToDo" napisan± w PHP z backendem w
+MySQL. Posiada bardzo prosty i efektywny sposób na ¶ledzenie rzeczy do
+zrobienia oraz sortowania zadañ wed³ug priorytetów. Interfejs jest
+zrobiony aby byæ jak najprostszym.
 
 %prep
 %setup -q

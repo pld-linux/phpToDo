@@ -13,7 +13,7 @@ Requires:	webserver
 Buildarch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_phptododir	/home/httpd/html/phptodo
+%define		_phptododir	/home/services/httpd/html/phptodo
 
 %description
 phpToDo is a simple todo list written in PHP with a MySQL backend. It

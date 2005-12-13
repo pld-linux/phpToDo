@@ -34,7 +34,7 @@ zrobiony aby byæ jak najprostszym.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_phptododir}/img,/etc/httpd} 
+install -d $RPM_BUILD_ROOT{%{_phptododir}/img,/etc/httpd}
 
 install *.php *.css	$RPM_BUILD_ROOT%{_phptododir}
 install img/*.png	$RPM_BUILD_ROOT%{_phptododir}/img
@@ -72,7 +72,7 @@ fi
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog INSTALL README TODO sql/*
-%config(noreplace) %verify(not size mtime md5) /etc/httpd/%{name}.conf
+%config(noreplace) %verify(not md5 mtime size) /etc/httpd/%{name}.conf
 %dir %{_phptododir}
 %attr(664,root,http) %config(noreplace) %{_phptododir}/*.php
 %{_phptododir}/*.css

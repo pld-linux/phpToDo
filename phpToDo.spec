@@ -1,3 +1,4 @@
+# TODO: webapps
 Summary:	phpToDo - todo list written in PHP with MySQL
 Summary(pl):	phpToDo - lista rzeczy do zrobienia napisana w PHP i MySQL-u
 Name:		phpToDo
@@ -76,4 +77,5 @@ fi
 %dir %{_phptododir}
 %attr(664,root,http) %config(noreplace) %{_phptododir}/*.php
 %{_phptododir}/*.css
+%dir %{_phptododir}/img
 %{_phptododir}/img/*.png

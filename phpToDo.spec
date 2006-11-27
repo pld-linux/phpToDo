@@ -1,4 +1,5 @@
-# TODO: webapps
+# TODO
+# - webapps
 Summary:	phpToDo - todo list written in PHP with MySQL
 Summary(pl):	phpToDo - lista rzeczy do zrobienia napisana w PHP i MySQL-u
 Name:		phpToDo
@@ -11,7 +12,8 @@ Source0:	ftp://ftp.ftlight.net/pub/phptodo/%{name}-%{version}.tar.gz
 Source1:	%{name}.conf
 URL:		http://php-todo.sourceforge.net/
 Requires:	mysql
-Requires:	php-mysql >= 4.1.0
+Requires:	php(mysql)
+Requires:	webserver(php) >= 4.1.0
 Requires:	webserver
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

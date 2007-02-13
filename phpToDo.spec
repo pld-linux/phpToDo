@@ -1,7 +1,7 @@
 # TODO
 # - webapps
 Summary:	phpToDo - todo list written in PHP with MySQL
-Summary(pl.UTF-8):   phpToDo - lista rzeczy do zrobienia napisana w PHP i MySQL-u
+Summary(pl.UTF-8):	phpToDo - lista rzeczy do zrobienia napisana w PHP i MySQL-u
 Name:		phpToDo
 Version:	0.1.1
 Release:	1
